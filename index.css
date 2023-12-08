@@ -27,7 +27,7 @@ body {
     z-index: 9999;
 } */
 main {
-    margin-top: 150px;
+    padding-top: 15rem;
     display: block;
 }
 /* Globales */
@@ -313,4 +313,35 @@ button {
 
 
 
+/* BLACK SECTION*/
 
+
+.black {
+    width: 100%;
+    margin: 0;
+    background-color: #000;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+
+}
+
+
+.p-blackSection{
+    color: var(--blanco);
+    padding-top: 2rem;
+    
+}
+
+.bandas{
+display: flex;
+flex-wrap: wrap ;
+align-items: center;
+justify-content:space-evenly;
+gap: 0rem;
+}
+
+
+/* GUIDE SECTION */
+.Guide{
+    padding-top: 15rem;
+}
