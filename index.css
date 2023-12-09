@@ -27,7 +27,7 @@ body {
     z-index: 9999;
 } */
 main {
-    padding-top: 15rem;
+    padding-top: 10rem;
     display: block;
 }
 /* Globales */
@@ -38,19 +38,24 @@ main {
 a {
     text-decoration: none;
 }
-h1, h2, h3, h4 {
+/* h1, h2, h4 {
     font-family: var(--fuenteHeading);
     line-height: 1.2;
-}
+} */
 h1 {
-    font-size: 4.8rem;
+    font-size: 60px;
     font-family: 'Inconsolata', monospace;
+    line-height: 1.2;
 }
 h2 {
-    font-size: 4rem;
+    font-size: 5rem;
+    line-height: 1.2;
 }
 h3 {
-    font-size: 3.2rem;
+    font-size: 2.5rem;
+    line-height: 1.30;
+
+
 }
 h4 {
     font-size: 2.8rem;
@@ -121,7 +126,7 @@ a{
 }
 .titulo{
     color: var(--blanco);
-    font-size: 60px;
+    
  
 }
 .parrafo-titulo{
@@ -165,11 +170,9 @@ button {
  .p-principal{
     font-weight: bold;
     color: gray;
+   padding-bottom: 2rem;
  }
- .principal{
-    padding-top: 10rem;
 
- }
  .p-secundario{
     padding: 2rem;
     width: 60%;
@@ -181,8 +184,8 @@ button {
 .articulos{
   display: flex;
   gap: 5rem;
-  padding-top: 5rem;
-  padding-bottom: 10rem;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
 
 }
 .titulo-articulo{
@@ -216,6 +219,12 @@ button {
     }
     h3{
         font-size: 2.2rem;
+    }
+    h2{
+        font-size: 4rem;
+    }
+    h1{
+        font-size: 4.8rem;
     }
     .navegacion{
         display: none;
@@ -299,6 +308,20 @@ button {
         margin-top: 1rem;  
         
     }
+    #grid-container-responsive {
+        grid-template-columns: 1fr;
+      }
+      .texto-grid{
+        font-size: 13px;
+      }
+
+      .yellow-flex{
+        flex-direction: column;
+      }
+      .WHAT{
+        text-align: left;
+        justify-content: flex-start;
+      }
 }
 
 
@@ -343,5 +366,80 @@ gap: 0rem;
 
 /* GUIDE SECTION */
 .Guide{
-    padding-top: 15rem;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px; /* Aumenté el espacio entre las columnas y filas para dar más espacio en pantallas más pequeñas */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .grid-item {
+    padding-left: 2.5rem ;
+    padding-right: 2.5rem ;
+    padding-top: 2rem;
+    padding-bottom: 0;
+    text-align: left;
+  }
+.numero-parrafo{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.link-articulo{
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--negro);
+    text-decoration: underline;
+
+}
+.texto-grid{
+    padding-top:10px ;
+    padding-bottom:10px;
+    font-size: 15px;
+}
+
+.grid-item h3{
+    line-height: 1.30;
+    
+}
+
+/* yellow-section */
+
+.yellow-section{
+    background-color: #fcc861;
+    width: 100%;
+    padding-top: 10rem ;
+    padding-bottom: 10rem ;
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+}
+
+.yellow-flex{
+    display: flex;
+    box-sizing: border-box;
+    gap: 30px;
+    justify-content: flex-end;
+    align-items: center;
+    margin: auto;
+    max-width: 1080px;
+
+}
+.yellow-text{
+    font-size: 3.5rem;
+    line-height: calc(1em + 0.625rem);
+    padding-left:3rem ;
+    padding-right: 3rem;
+}
+
+.WHAT{
+    margin-left:3rem ;
+    margin-right: 3rem;
+}
+
